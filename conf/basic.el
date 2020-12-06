@@ -63,3 +63,19 @@
 (global-anzu-mode +1)
 ;; 入力に 100個以上マッチする場合はそれ以上数え上げを行わない
 (setq anzu-search-threshold 100)
+
+;;BackSpaceを有効に(isearch時にも効くように)
+(define-key key-translation-map (kbd "C-h") (kbd "<DEL>"))
+
+;; 折り返し表示ON/OFF
+(defun toggle-truncate-lines ()
+  "折り返し表示をトグル動作します."
+  (interactive)
+  (if truncate-lines
+      (setq truncate-lines nil)
+    (setq truncate-lines t))
+  (recenter))
+(global-set-key (kbd "C-t") 'toggle-truncate-lines)
+
+;;; 現在行を目立たせる
+(global-hl-line-mode)
