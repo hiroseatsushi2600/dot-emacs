@@ -10,7 +10,8 @@
 (prefer-coding-system 'utf-8)
 
 ;; theme
-(load-theme 'atom-one-dark t)
+;(load-theme 'atom-one-dark t)
+(load-theme 'doom-dracula t)
 
 ;; お静かに
 (setq ring-bell-function 'ignore)

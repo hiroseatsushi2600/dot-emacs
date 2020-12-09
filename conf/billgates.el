@@ -6,9 +6,9 @@
 ;; windowsのクリップボードコピペ可にする
 (setq x-select-enable-clipboard t)
 
-;; 謎
+;; パソコン初心者モード
 (cua-mode t)
-
+;; パソコン初心者モードでもさらに足りないキーバインドを変更
 (bind-key* "C-a" 'mark-whole-buffer) ;; 全選択
 (bind-key* "C-s" 'save-buffer) ;; 保存
 (bind-key* "C-S-s" 'write-file) ;; 名前をつけて保存

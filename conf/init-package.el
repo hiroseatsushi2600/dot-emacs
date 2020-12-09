@@ -12,6 +12,7 @@
     bind-key
     undo-tree
     atom-one-dark-theme
+    doom-themes
     anzu)
   "packages to be installed")
 
