@@ -19,10 +19,10 @@
 (setq inhibit-startup-message t)
 
 ;; メニューバーの非表示
-;(menu-bar-mode -1)      ;素人なのでメニューバーは必要 (^p^)
+;(menu-bar-mode -1)      ;やっぱ素人なのでメニューバーは必要だよ(^p^)
 
-;; ツールバーの非表示
-(tool-bar-mode -1)
+;; ツールバーの非表示. ターミナル版だとtool-bar-modeないらしいので回避.
+(if (functionp 'tool-bar-mode) (tool-bar-mode 0))
 
 ;; ウィンドウを透明にする
 ;; (add-to-list 'default-frame-alist '(alpha . (0.85 0.85)))
@@ -53,8 +53,9 @@
 (setq auto-save-default nil)
 
 ;; 改行コードを表示する
-(setq eol-mnemonic-dos "↓")
-(setq eol-mnemonic-mac "↲")
+(setq eol-mnemonic-unix "(LF)")
+(setq eol-mnemonic-dos "(CRLF)")
+(setq eol-mnemonic-mac "(CR)")
 
 ;; タブにスペースを使用する
 (setq-default tab-width 4 indent-tabs-mode nil)
@@ -68,6 +69,7 @@
 (define-key key-translation-map (kbd "C-h") (kbd "<DEL>"))
 
 ;; 折り返し表示ON/OFF
+(setq truncate-lines t)
 (defun toggle-truncate-lines ()
   "折り返し表示をトグル動作します."
   (interactive)
@@ -75,7 +77,10 @@
       (setq truncate-lines nil)
     (setq truncate-lines t))
   (recenter))
-(global-set-key (kbd "C-t") 'toggle-truncate-lines)
+(global-set-key (kbd "C-x C-t") 'toggle-truncate-lines)
 
-;;; 現在行を目立たせる
-(global-hl-line-mode)
+;; Ctrl + T でウインドウ切り替え
+(global-set-key (kbd "C-t") (lambda ()
+                              (interactive)
+                              (other-window 1)))
+

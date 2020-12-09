@@ -21,11 +21,6 @@
   (unless (package-installed-p pkg)
     (package-install pkg)))
 
-;; キーマップの変更をかんたんにしてくれるパッケージ
 (require 'bind-key)
-
-;; undo,redoをまともにする
 (require 'undo-tree)
-
-;; 知らないやつ
 (require 'anzu)
