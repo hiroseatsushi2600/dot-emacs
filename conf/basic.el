@@ -13,6 +13,12 @@
 ;(load-theme 'atom-one-dark t)
 (load-theme 'doom-dracula t)
 
+;; font
+(setq default-frame-alist
+      (append (list
+              '(font . "HackGen-11"))
+              default-frame-alist))
+
 ;; お静かに
 (setq ring-bell-function 'ignore)
 

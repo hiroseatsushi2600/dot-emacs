@@ -13,6 +13,13 @@
     undo-tree
     atom-one-dark-theme
     doom-themes
+    smex
+    json-mode
+    haml-mode
+    golint
+    go-mode
+    rust-mode
+    editorconfig
     anzu)
   "packages to be installed")
 
