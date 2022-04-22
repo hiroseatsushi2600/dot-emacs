@@ -11,8 +11,10 @@
   '(which-key
     bind-key
     undo-tree
+    neotree
     atom-one-dark-theme
     doom-themes
+    ;zenburn-theme
     smex
     json-mode
     haml-mode
@@ -32,3 +34,23 @@
 (require 'bind-key)
 (require 'undo-tree)
 (require 'anzu)
+(require 'neotree)
+
+;; 隠しファイルをデフォルトで表示
+(setq neo-show-hidden-files t)
+;; cotrol + q でneotreeを起動
+;(bind-key "C-e" ''neotree-toggle)
+;(define-key global-map (kbd "C-e") 'neotree-toggle)
+;(setq neo-theme (if (display-graphic-p) 'icons 'arrow))
+
+(bind-key "C-e" 'neotree-toggle)
+(bind-key "RET" 'neotree-enter-hide neotree-mode-map)
+(bind-key "a" 'neotree-hidden-file-toggle neotree-mode-map)
+(bind-key "<left>" 'neotree-select-up-node neotree-mode-map)
+(bind-key "<right>" 'neotree-change-root neotree-mode-map)
+;; neotree でファイルを新規作成した後、自動的にファイルを開く
+(setq neo-create-file-auto-open t)
+;; delete-other-window で neotree ウィンドウを消さない
+(setq neo-persist-show t)
+;; neotree ウィンドウを表示する毎に current file のあるディレクトリを表示する
+(setq neo-smart-open t)

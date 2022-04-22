@@ -1,0 +1,23 @@
+(undo-tree-save-format-version . 1)
+"cfe19c830b2bf0bbfaedf632d289d42b62001417"
+[nil nil nil nil (25185 50957 507189 0) 0 nil]
+([nil nil ((#(" " 0 1 (fontified t)) . -1407) (undo-tree-id29 . -1) (#(" " 0 1 (fontified t)) . -1408) (undo-tree-id30 . -1) 1409 (t 25185 7197 253530 424000)) nil (25185 50957 507187 0) 0 nil])
+([nil nil ((nil rear-nonsticky nil 1677 . 1678) (nil fontified nil 1407 . 1678) (1407 . 1678)) nil (25185 50957 507184 0) 0 nil])
+([nil nil ((#(" " 0 1 (face font-lock-comment-face fontified nil)) . 1443) (undo-tree-id28 . -1) (1444 . 1445)) nil (25185 50957 507182 0) 0 nil])
+([nil nil ((#("
+" 0 1 (fontified t)) . -1478) (undo-tree-id26 . -1) (undo-tree-id27 . -1) 1479) nil (25185 50957 507179 0) 0 nil])
+([nil nil ((#("
+" 0 1 (fontified t)) . -1403) (undo-tree-id22 . -1) (undo-tree-id23 . -1) (#(" " 0 1 (fontified t)) . -1404) (undo-tree-id24 . -1) (#(" " 0 1 (fontified t)) . -1405) (undo-tree-id25 . -1) 1406) nil (25185 50957 507176 0) 0 nil])
+([nil nil ((#(" " 0 1 (face font-lock-comment-face fontified nil)) . 1519) (undo-tree-id21 . -1) (1520 . 1521)) nil (25185 50957 507171 0) 0 nil])
+([nil nil ((#("
+" 0 1 (fontified t)) . -1545) (undo-tree-id19 . -1) (undo-tree-id20 . -1) 1546) nil (25185 50957 507169 0) 0 nil])
+([nil nil ((#(";; キーバインドをシンプルにする (setq neo-keymap-style 'concise)
+" 0 3 (face font-lock-comment-delimiter-face fontified t) 3 51 (face font-lock-comment-face fontified t)) . 1546) (undo-tree-id16 . -51) (undo-tree-id17 . -51) (undo-tree-id18 . -51) 1597) nil (25185 50957 507166 0) 0 nil])
+([nil nil ((#("
+" 0 1 (fontified t)) . -1545) (undo-tree-id11 . -1) (undo-tree-id12 . -1) (undo-tree-id13 . -1) (undo-tree-id14 . -1) (undo-tree-id15 . -1) 1546) nil (25185 50957 507162 0) 0 nil])
+([nil nil ((#(" " 0 1 (face font-lock-comment-face fontified nil)) . 1597) (undo-tree-id10 . -1) (1598 . 1599)) nil (25185 50957 507157 0) 0 nil])
+([nil nil ((#(" " 0 1 (fontified t)) . -1623) (undo-tree-id5 . -1) (undo-tree-id6 . -1) (undo-tree-id7 . -1) (undo-tree-id8 . -1) (undo-tree-id9 . -1) 1624) nil (25185 50957 507154 0) 0 nil])
+([nil nil ((#(" " 0 1 (fontified t)) . -1622) (undo-tree-id0 . -1) (undo-tree-id1 . -1) (undo-tree-id2 . -1) (undo-tree-id3 . -1) (undo-tree-id4 . -1) 1623) nil (25185 50957 507142 0) 0 nil])
+([nil nil ((521 . 526) (t 25185 50957 510908 622000)) nil (25185 51879 876791 0) 0 nil])
+([nil current ((nil rear-nonsticky nil 538 . 539) (nil fontified nil 526 . 539) (526 . 539)) nil (25185 51879 876785 0) 0 nil])
+nil
