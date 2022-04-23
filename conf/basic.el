@@ -10,13 +10,13 @@
 (prefer-coding-system 'utf-8)
 
 ;; theme
-;(load-theme 'atom-one-dark t)
-(load-theme 'doom-dracula t)
+(load-theme 'atom-one-dark t)
+;(load-theme 'doom-dracula t)
 
 ;; font
 (setq default-frame-alist
       (append (list
-              '(font . "HackGen-11"))
+              '(font . "HackGenNerd"))
               default-frame-alist))
 
 ;; お静かに
@@ -32,7 +32,7 @@
 (if (functionp 'tool-bar-mode) (tool-bar-mode 0))
 
 ;; ウィンドウを透明にする
-;; (add-to-list 'default-frame-alist '(alpha . (0.85 0.85)))
+;(add-to-list 'default-frame-alist '(alpha . (0.85 0.85)))
 
 ;; 行数を表示する
 (global-linum-mode t)

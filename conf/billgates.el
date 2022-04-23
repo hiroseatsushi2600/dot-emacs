@@ -1,7 +1,7 @@
 ;; windowsらしいundo,redo
-(global-undo-tree-mode)
-(define-key global-map (kbd "C-z") 'undo-tree-undo)
-(define-key global-map (kbd "C-y") 'undo-tree-redo)
+(global-undo-tree-mode t)
+;;(define-key global-map (kbd "C-z") 'undo-tree-undo)
+;;(define-key global-map (kbd "C-y") 'undo-tree-redo)
 
 ;; windowsのクリップボードコピペ可にする
 (setq x-select-enable-clipboard t)
