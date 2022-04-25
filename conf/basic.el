@@ -17,8 +17,10 @@
 ;; font
 (setq default-frame-alist
       (append (list
-              '(font . "HackGenNerd"))
+              '(font . "HackGenNerd-14"))
               default-frame-alist))
+
+(set-frame-size (selected-frame) 224 64)
 
 ;; お静かに
 (setq ring-bell-function 'ignore)

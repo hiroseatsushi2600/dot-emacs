@@ -36,13 +36,11 @@
 (require 'anzu)
 (require 'neotree)
 
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; neotree
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; 隠しファイルをデフォルトで表示
 (setq neo-show-hidden-files t)
-;; cotrol + q でneotreeを起動
-;(bind-key "C-e" ''neotree-toggle)
-;(define-key global-map (kbd "C-e") 'neotree-toggle)
-;(setq neo-theme (if (display-graphic-p) 'icons 'arrow))
-
 (bind-key "C-e" 'neotree-toggle)
 (bind-key "RET" 'neotree-enter-hide neotree-mode-map)
 (bind-key "a" 'neotree-hidden-file-toggle neotree-mode-map)

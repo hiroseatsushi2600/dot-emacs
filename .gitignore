@@ -13,6 +13,7 @@
 /recentf
 /secret.d/*
 /transient
+/newsticker
 abbrev_defs
 ac-comphist.dat
 anything-c-adaptive-history
@@ -35,3 +36,4 @@ tutorial
 twittering-tinyurl-api-key.el
 url
 vendor
+*.~undo-tree~
