@@ -21,6 +21,8 @@
 ;; 画面サイズ
 (set-frame-size (selected-frame) 224 52)
 
+;; カーソル 縦棒
+(add-to-list 'default-frame-alist '(cursor-type . bar))
 
 ;; お静かに
 (setq ring-bell-function 'ignore)
